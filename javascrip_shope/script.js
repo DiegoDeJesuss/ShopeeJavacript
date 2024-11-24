@@ -1,6 +1,7 @@
 function calcular() {
   // Obter o valor do produto
   var valorProduto = parseFloat(document.getElementById("valor_produto").value);
+  var lucro_desejado = parseFloat(document.getElementById("lucro_desejado").value);
 
   // Verificar qual radio button está selecionado
   var freteSim = document.getElementById("frete_sim").checked;
@@ -28,8 +29,10 @@ function calcular() {
     freteInfo = "O cliente terá que pagar o frete para a Shope.";
   }
 
+
+
   // Calcular o lucro e o preço de venda
-  var intencaoDeLucro = valorProduto * 0.8; // 80% de lucro
+  var intencaoDeLucro = valorProduto * lucro_desejado/100; // 80% de lucro
   var valorDeVenda = valorProduto + (taxa + intencaoDeLucro);
 
   // Exibir o resultado na página
@@ -38,18 +41,18 @@ function calcular() {
     resultadoDiv.innerHTML = `
         Você pagará a taxa de 20% mais 4 R$  no total R$ ${taxa.toFixed(2)}<br>
         ${freteInfo}<br>
-        Para ter 80% de lucro do valor original + a taxa, você deverá vender por: R$ ${valorDeVenda.toFixed(
+        Para ter 80% de lucro do valor original + a taxa, você deverá vender por: <strong>R$ ${valorDeVenda.toFixed(
           2
-        )}
+        )}</strong>
     `;
     
   }else {
     resultadoDiv.innerHTML = `
    Você pagará a taxa de 14% mais 4 R$  no total R$ ${taxa.toFixed(2)}<br>
     ${freteInfo}<br>
-    Para ter 80% de lucro do valor original + a taxa, você deverá vender por: R$ ${valorDeVenda.toFixed(
+    Para ter 80% de lucro do valor original + a taxa, você deverá vender por: <strong>R$ ${valorDeVenda.toFixed(
       2
-    )}
+    )}</stong>
 `;
   }
   
