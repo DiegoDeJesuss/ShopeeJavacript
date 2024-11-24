@@ -1,0 +1,18 @@
+.formulario{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+.opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-shope{
+    width: 400px;
+    margin-bottom: 2rem;
+}
+   
