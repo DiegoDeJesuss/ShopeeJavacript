@@ -33,7 +33,7 @@ function calcular() {
     freteInfo = "O frete do cliente será grátis.";
   } else if (freteNao) {
     taxa = valorProduto * 0.14 + 4; // Taxa de 14% + R$ 4
-    freteInfo = "O cliente terá que pagar o frete para a Shope.";
+    freteInfo = "O cliente terá que pagar o frete.";
   }
 
 
@@ -48,7 +48,7 @@ function calcular() {
     resultadoDiv.innerHTML = `
         Você pagará a taxa de 20% mais 4 R$  no total R$ ${taxa.toFixed(2)}<br>
         ${freteInfo}<br>
-        Para ter 80% de lucro do valor original + a taxa, você deverá vender por: <strong>R$ ${valorDeVenda.toFixed(
+        Para ter ${lucro_desejado}% de lucro do valor original + a taxa, você deverá vender por: <strong>R$ ${valorDeVenda.toFixed(
           2
         )}</strong>
     `;
