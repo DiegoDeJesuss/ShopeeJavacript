@@ -55,7 +55,7 @@ function calcular() {
     
   }else {
     resultadoDiv.innerHTML = `
-   Você pagará a taxa de ${lucro_desejado}% mais 4 R$  no total R$ ${taxa.toFixed(2)}<br>
+   Você pagará a taxa de 14% mais 4 R$  no total R$ ${taxa.toFixed(2)}<br>
     ${freteInfo}<br>
     Para ter ${lucro_desejado}% de lucro do valor original + a taxa, você deverá vender por: <strong>R$ ${valorDeVenda.toFixed(
       2
