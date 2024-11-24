@@ -8,8 +8,15 @@ function calcular() {
   var freteNao = document.getElementById("frete_nao").checked;
 
   // Verificar se o valor do produto foi inserido corretamente
-  if (isNaN(valorProduto) || valorProduto <= 0) {
+  if (isNaN(valorProduto) || valorProduto <= 0)  {
     alert("Por favor, insira um valor válido para o produto.");
+    return;
+  }
+
+
+  // Verifica se o valor do lucro foi inserido.
+  if (isNaN(lucro_desejado) || lucro_desejado <= 0)  {
+    alert("Por favor, insira um valor válido para o Lucro em porcentagem.");
     return;
   }
 
@@ -48,9 +55,9 @@ function calcular() {
     
   }else {
     resultadoDiv.innerHTML = `
-   Você pagará a taxa de 14% mais 4 R$  no total R$ ${taxa.toFixed(2)}<br>
+   Você pagará a taxa de ${lucro_desejado}% mais 4 R$  no total R$ ${taxa.toFixed(2)}<br>
     ${freteInfo}<br>
-    Para ter 80% de lucro do valor original + a taxa, você deverá vender por: <strong>R$ ${valorDeVenda.toFixed(
+    Para ter ${lucro_desejado}% de lucro do valor original + a taxa, você deverá vender por: <strong>R$ ${valorDeVenda.toFixed(
       2
     )}</stong>
 `;
