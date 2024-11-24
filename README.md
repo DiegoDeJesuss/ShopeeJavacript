@@ -4,7 +4,7 @@ Programa para calcular o quanto se deve vender um produto da Shopee, já adicion
 
 ## Deploy
 
-Para fazer o deploy desse projeto clique no link
+Para ver o deploy desse projeto clique no link
 
 
 https://meek-begonia-5d94b1.netlify.app/
