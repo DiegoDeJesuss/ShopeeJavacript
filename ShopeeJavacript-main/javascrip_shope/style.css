@@ -1,0 +1,89 @@
+body {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+.formulario{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+.opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-shope{
+    width: 400px;
+    margin-bottom: 2rem;
+}
+
+
+.btn{
+    margin-bottom: 25px;
+
+}
+
+#lucro_desejado{
+    width: 100px;
+}
+
+#valor_produto{
+    width: 100px;
+}
+
+.tamanho_do_texto{
+    font-size: 25px;
+}
+
+#resultado{
+    
+    font-size: 20px;
+}
+
+
+@media (max-width: 575.98px) {
+
+    #resultado{
+        max-width: 240px;
+        font-size: 18px;
+    }
+
+    #lucro_desejado{
+        width: 150px;
+    }
+    
+    #valor_produto{
+        width: 150px;
+    }
+
+    
+
+
+    h1{
+        margin: 50px 0px;
+        font-size: 35px;
+    }
+
+    .tamanho_do_texto{
+        font-size: 26px;
+    }
+   
+    .img-shope{
+        width: 70%;
+        margin: auto;
+    }
+
+ 
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
