@@ -14,7 +14,7 @@ https://meek-begonia-5d94b1.netlify.app/
 
 **Front-end:** HTML CSS JAVASCRIPT
 
-IDEIA DE PROEJETO.
+IDEIA DE PROJETO.
 https://seller.shopee.com.br/edu/article/18483/como-funciona-a-politica-de-comissao-para-vendedores-shopee
 
 
